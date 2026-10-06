@@ -4,6 +4,14 @@ What changed in each release, newest first. The updates panel shows what's
 new since the version a system has. Changes go under "Unreleased" until a
 release (a tag `vX.Y.Z`) names them.
 
+## 0.2.1 (2026-10-06)
+
+- Plugins: changing a plugin's settings keeps the list where it was and the
+  plugin selected, instead of jumping back to it; quick changes in a row are
+  applied together, once, instead of one reload each.
+- Pomodoro: changing its settings doesn't reload the shell any more; the
+  timer, the panel and the bar follow them as they change.
+
 ## 0.2.0 (2026-10-06)
 
 - A version is its number: `mazapan --version` says "mazapan 0.2.0", no name beside it.
