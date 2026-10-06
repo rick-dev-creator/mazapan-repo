@@ -4,6 +4,24 @@ What changed in each release, newest first. The updates panel shows what's
 new since the version a system has. Changes go under "Unreleased" until a
 release (a tag `vX.Y.Z`) names them.
 
+## 0.2.0 (2026-10-06)
+
+- A version is its number: `mazapan --version` says "mazapan 0.2.0", no name beside it.
+- Pomodoro, a community plugin: focus in sessions with breaks between them.
+  A ring that fills as the time goes, the time left and when it ends, the
+  sessions of each set, what you're working on; start, pause, skip, five
+  more minutes. Breaks start by themselves (or wait), and so can the next
+  session; a sound and a notice say when each phase ends, the notice
+  starting the next. Do Not Disturb while you focus. Today against your
+  daily goal, minutes focused, the streak of days and the week. In the bar
+  while a session is on, in the Control Center, the palette and SUPER +
+  ALT + P; every length and switch in its settings.
+- The palette: typing a place's name finds the place first ("wallpaper"
+  opens the wallpaper picker, before the actions that start with the same
+  word). Next wallpaper with no pictures of yours opens the picker, which
+  says where to put them; the theme's own wallpaper when it's already the
+  one says so, instead of nothing.
+
 ## 0.1.0 — Mazapan (2026-10-05)
 
 - The apps chosen in the installer go in with the system: Basic's (the
