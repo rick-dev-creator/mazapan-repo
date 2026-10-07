@@ -4,6 +4,42 @@ What changed in each release, newest first. The updates panel shows what's
 new since the version a system has. Changes go under "Unreleased" until a
 release (a tag `vX.Y.Z`) names them.
 
+## 0.4.3 (2026-10-07)
+
+- The installer couldn't be used by keyboard: only Enter, to move on.
+  Now each screen starts in its search or its list, ↑↓ move through
+  languages, keyboards, time zones, networks and disks, Space picks,
+  Enter picks or moves on, and Tab goes through the fields, switches and
+  buttons. Buttons and switches everywhere (panels, the Control Center)
+  take Tab too, Space or Enter a button and Space a switch, with a ring
+  where the keys are.
+
+## 0.4.2 (2026-10-07)
+
+- Now Playing, a new plugin in the registry
+  ([mazapan-now-playing](https://github.com/rick-dev-creator/mazapan-now-playing)):
+  what's playing wherever it plays (Spotify, YouTube in a browser, mpv…)
+  in the bar, the Control Center and a panel with the cover's colors,
+  every player, a bar to drag through the song and the sound drawn as it
+  plays. `mazapan plugins add now-playing`, or the Plugins panel.
+- The Control Center: a plugin can take the place of one of its parts by
+  giving its own the same name and a higher number
+  (`control/sections/31-media.qml` over `30-media.qml`). With the plugin
+  off, the original is back.
+- Three wrong passwords lock the account for 10 minutes (Arch's
+  faillock), and the lock screen and the login screen kept saying only
+  "wrong password", the right one too. Now they say the account is locked
+  and the minutes left. The lock screen has suspend, restart and shut down
+  at the bottom, as the login screen does (restart and shut down ask for
+  a second click).
+
+## 0.4.1 (2026-10-07)
+
+- After an update that wanted a restart (a new kernel), the Updates panel
+  and the bar kept asking for it after the restart too: they read the last
+  run's log again. Now a restart asked for before the computer last
+  started counts as done.
+
 ## 0.4.0 (2026-10-07)
 
 - The plugin registry: plugins others make live in their own repositories,
