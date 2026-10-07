@@ -4,6 +4,63 @@ What changed in each release, newest first. The updates panel shows what's
 new since the version a system has. Changes go under "Unreleased" until a
 release (a tag `vX.Y.Z`) names them.
 
+## 0.4.0 (2026-10-07)
+
+- The plugin registry: plugins others make live in their own repositories,
+  and [mazapan-plugins](https://github.com/rick-dev-creator/mazapan-plugins)
+  lists them, each by its tag and the commit that was looked at. The
+  Plugins panel and `mazapan plugins add` read it from
+  mazapan.dev/plugins/index.toml (a copy ships for when it can't be
+  reached), install exactly that commit even if the tag moves, and follow
+  the registry's newer versions (the Updates panel says when there's one),
+  asking again for anything new they'd be able to do.
+- mazapan.dev/plugins: every plugin with its icon, screenshots, README and
+  what it can do, a page each, and a feed of what's new.
+- Markets and Pomodoro moved to their own repositories
+  ([mazapan-markets](https://github.com/rick-dev-creator/mazapan-markets),
+  [mazapan-pomodoro](https://github.com/rick-dev-creator/mazapan-pomodoro)),
+  listed in the registry. Where one was on, the next update installs it
+  from there, exactly as it was (its settings and history kept); until
+  then its files stay as they are.
+- plugin.toml says who made a plugin, where it lives and its license, and
+  how it looks (`[gallery]`: an icon, screenshots). `mazapan plugins
+  check` asks for them in a plugin to share, refuses a key a built-in
+  plugin uses, and says it all as JSON (`--json`).
+
+## 0.3.2 (2026-10-07)
+
+- Apps from their makers: their download is tried again too when the
+  network doesn't answer (four times, five seconds apart), not only the
+  question for their latest version: a home router's DNS that misses a
+  question now and then no longer leaves an app out.
+
+## 0.3.1 (2026-10-07)
+
+- Apps from their makers (Herdr, VS Code, JetBrains…): asked again for a
+  few seconds when the network doesn't answer, instead of left out at
+  once. The first login's apps start as soon as there's a connection, and
+  its DNS can take a moment more: they were left out then ("not
+  everything was installed").
+
+## 0.3.0 (2026-10-07)
+
+- Default apps: the terminal is one of them (Settings, Default apps):
+  SUPER + Enter, the palette's terminal apps, Plugins, Updates and a
+  crash's details open the one chosen (xdg-terminal-exec), not always
+  foot. Each kind offers every installed app that opens it, not only a
+  fixed list; and in Apps, an installed app that can be the default has
+  "Use as default …" beside it.
+- Share, like AirDrop: files to a phone or computer nearby over Bluetooth,
+  as bubbles with their progress; one not paired is paired right there,
+  its code confirmed in the panel. Files a phone sends here: the panel
+  opens to accept them, shows them arriving, and they go to Downloads
+  (ask, from paired devices without asking, or never). Pairing from the
+  phone: the Share switch in the Control Center makes this computer
+  visible for three minutes. A send button beside a paired phone in the
+  Bluetooth card; "Choose files…" in the panel and the Control Center.
+  Pairing a phone from the Bluetooth card now asks for its code too (it
+  had nobody to ask).
+
 ## 0.2.1 (2026-10-06)
 
 - Plugins: changing a plugin's settings keeps the list where it was and the
